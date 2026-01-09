@@ -125,3 +125,87 @@ body.light .card {
   margin-bottom: 10px;
   font-weight: bold;
 }
+
+/* LOGIN MODAL */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  color: black;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  width: 90%;
+  max-width: 350px;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.modal-content button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background: #00ffd5;
+  cursor: pointer;
+}
+
+#achievements li {
+  background: rgba(0,0,0,0.3);
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 10px;
+}
+
+#ranking li {
+  background: rgba(255,255,255,0.2);
+  padding: 10px;
+  margin: 6px 0;
+  border-radius: 10px;
+}
+
+.editors {
+  display: grid;
+  gap: 15px;
+}
+
+.editor-box label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.editor-box textarea {
+  width: 100%;
+  min-height: 120px;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: monospace;
+}
+
+@media (min-width: 768px) {
+  .editors {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+iframe {
+  margin-top: 15px;
+  width: 100%;
+  height: 250px;
+  background: white;
+  border-radius: 10px;
+}
