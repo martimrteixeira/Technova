@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechNova</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🚀 TechNova</h1>
+  <p>Aprenda programação na prática</p>
+
+  <button id="themeBtn">🌙 Tema</button>
+</header>
+
+<main class="container">
+
+  <section class="languages">
+    <div class="card" data-lang="html">HTML</div>
+    <div class="card" data-lang="css">CSS</div>
+    <div class="card" data-lang="js">JavaScript</div>
+  </section>
+
+  <section class="info">
+    <h2 id="info-title">Escolha uma linguagem</h2>
+    <p id="info-text"></p>
+
+    <div class="tabs">
+      <button class="tab active" data-tab="sobre">Sobre</button>
+      <button class="tab" data-tab="editor">Editor</button>
+    </div>
+
+    <div class="tab-content" id="editor">
+  <p id="challenge"></p>
+
+  <textarea id="editor-code" placeholder="Digite seu código aqui..."></textarea>
+
+  <button id="runBtn">▶ Executar</button>
+  <button id="resetBtn">♻ Limpar</button>
+
+  <iframe id="preview"></iframe>
+</div>
+
+
+    <div class="progress">
+      <div class="bar" id="progress-bar"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Projeto TechNova © 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
