@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>TechNova</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOGIN -->
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <h2>👋 Bem-vindo!</h2>
+    <p>Digite seu nome para começar</p>
+    <input id="usernameInput" type="text" placeholder="Seu nome">
+    <button id="loginBtn">Entrar</button>
+  </div>
+</div>
+
+<header>
+  <h1>TechNova 🚀</h1>
+  <p id="welcome"></p>
+</header>
+
+<main class="container fade-in">
+
+  <section class="editor">
+    <h2>Editor</h2>
+
+    <div class="editors">
+      <textarea id="html-code" placeholder="HTML"></textarea>
+      <textarea id="css-code" placeholder="CSS"></textarea>
+      <textarea id="js-code" placeholder="JavaScript"></textarea>
+    </div>
+
+    <button id="runBtn">▶ Executar</button>
+
+    <iframe id="preview"></iframe>
+  </section>
+
+  <section class="info">
+    <h2>🏆 Conquistas</h2>
+    <ul id="achievements"></ul>
+
+    <h2>📊 Ranking</h2>
+    <ol id="ranking"></ol>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+
+<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("/Technova/service-worker.js");
+  }
+</script>
+
+
+</body>
+</html>
